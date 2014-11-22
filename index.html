@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="cursor: auto;">
+	<meta charset="utf-8">
+    <title>Sortable Table Drag- Drop</title>
+    <link data-turbolinks-track="true" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.css" media="all" rel="stylesheet">
+    <meta content="authenticity_token" name="csrf-param">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Sortable Tables</h1>
+			<div class="panel panel-default">
+			  <table class="table table-bordered table-striped ui-sortable" id="sortable">
+				<thead>
+				  <tr>
+					<th>
+					  Title
+					</th>
+					<th>
+					  Description
+					</th>
+				  </tr>
+				</thead>
+				<tbody>
+				<tr data-item-id="1" class="item ui-sortable-handle">
+				  <td style="width: 569px;">
+					Title 1
+				  </td>
+				  <td style="width: 569px;">
+				  </td>
+				</tr><tr data-item-id="2" class="item ui-sortable-handle">
+				  <td style="width: 569px;">
+					Title 2
+				  </td>
+				  <td style="width: 569px;">
+				  </td>
+				</tr><tr data-item-id="3" class="item ui-sortable-handle">
+				  <td style="width: 569px;">
+					Title 3
+				  </td>
+				  <td style="width: 569px;">
+				  </td>
+				</tr>
+			</tbody>
+		   </table>
+		  </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+   <script src="dragdrop.js"></script>
+</body>
+</html>
